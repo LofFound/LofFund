@@ -1,0 +1,12 @@
+1.修改了codeNumber的传入形式，改为"399372.SZ,399373.SZ,399376.SZ,399377.SZ,399005.SZ"
+2.修改了部分注释
+3.修改了CodeTranslate类，只提供计算股票个数的功能
+4.修改了Strategy查询为空的返回值："399372.SZ,399373.SZ,399376.SZ,399377.SZ,399005.SZ"
+3.主要接口封装的接口：
+data层：
+（1）wsd：TimeSeriesData类：按日期获得数据
+（2）wsq：RealTimeData类：二级市场实时数据以及买一价
+（3）R：RCalculator类：获得指数的R
+（4）StrategySerialization类：存取商院制定的指数串，形成策略
+bl层：
+（1）Strategy类：调用StrategySerialization类
