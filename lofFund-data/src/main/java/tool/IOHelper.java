@@ -1,10 +1,8 @@
 package tool;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class IOHelper {
@@ -37,6 +35,21 @@ public class IOHelper {
 		return obj;
 
 	}
-	
+
+	public static List<String> getFileData(String filepath) throws FileNotFoundException {
+		List<String> result = new ArrayList<String>(2000);
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(new File(filepath)));
+			String line = reader.readLine();
+			while (line != null){
+				result.add(line);
+				line = reader.readLine();
+			}
+			return result;
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }
 

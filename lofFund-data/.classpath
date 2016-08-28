@@ -24,5 +24,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Matlab/toolbox/javabuilder/jar/javabuilder.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/eclipse workspace/windapi/distrib/windapi.jar"/>
+	<classpathentry kind="lib" path="windapi.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="windapi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lofFund-data/windapi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
